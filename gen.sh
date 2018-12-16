@@ -1,0 +1,1 @@
+python selfplay --training=true --backend=random --policy-softmax-temp=10 --parallelism=32 --visits=800 --cpuct=5.0 --resign-playthrough=100 --verbose-move-stats --temperature=1 --games=500000 --weights=/home/s/sergio-v/11250

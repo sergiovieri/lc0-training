@@ -1,0 +1,1 @@
+python selfplay --training --backend-opts="(backend=cudnn-fp16,gpu=$1)" --parallelism=32 --visits=800 --cpuct=2.5 --resign-percentage=1 --resign-playthrough=10 --temp-cutoff-move=16 --temp-value-cutoff=25 --temp-visit-offset=0 | grep -E --line-buffered 'tournamentstatus|gameready|fp_threshold' | tee $2

@@ -1,0 +1,1 @@
+python "${@:1:99}" --temp-cutoff-move=16 --temp-value-cutoff=25 --verbose-move-stats --backend=multiplexing --backend-opts="(backend=cudnn-fp16,gpu=0)" --threads=1 --minibatch-size=1 --cpuct=2.5 --fpu-reduction=0 --policy-softmax-temp=1 --temperature=1 --smart-pruning-factor=0 --score-type=Q
